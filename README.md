@@ -53,6 +53,7 @@ unsigned long long int PartitionSubsetAtoB(unsigned long long int A, unsigned lo
 	} while (k > 0);
 	return br;
 }
+
 }
 
 <div style="border:1px solid #ccc; padding:10px; border-radius:6px;">
