@@ -26,8 +26,6 @@ Starting from this partition, we then generate the subsequent partitions in $P(n
 
 Below is implementation of a subset generation:
 
-{
-
 unsigned long long int PartitionSubsetAtoB(unsigned long long int A, unsigned long long int B, int n)
 {
 	int a_local[MaxN];
