@@ -25,6 +25,7 @@ This is done by applying an unranking function to obtain the initial partition c
 Starting from this partition, we then generate the subsequent partitions in $P(n)$ until $B−A+1$ partitions are produced, ensuring that each process generates exactly $per_{pr}$ partitions.
 
 Below is implementation of a subset generation:
+{
 
 unsigned long long int PartitionSubsetAtoB(unsigned long long int A, unsigned long long int B, int n)
 {
@@ -52,6 +53,7 @@ unsigned long long int PartitionSubsetAtoB(unsigned long long int A, unsigned lo
 		//usePartition(a_local); function usePartition executes additional computations that use the generated partition.
 	} while (k > 0);
 	return br;
+}
 }
 
 <div style="border:1px solid #ccc; padding:10px; border-radius:6px;">
