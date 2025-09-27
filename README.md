@@ -16,3 +16,10 @@ The algorithm consists of the following main steps:
 2. Calculate $per_{pr}$ and determine the starting rank of the first partition ($rank*per_{pr}$, where $rank$ is the identifier of the current process) for each process.
 3. Use the unranking function to generate the first partition.
 4. Continue generating the next partitions until $per_{pr}$ partitions are obtained."
+
+Using this division method, the workload is distributed almost equally among the processes, with only one process generating slightly more partitions than the others. 
+For sufficiently large $p(n)$, this imbalance becomes negligible. 
+For instance, when $p(20)=627$ and $24$ threads are used, each process generates $26$ partitions, while the last process generates only $3$ additional partitions, resulting in a nearly uniform distribution of work.
+The idea is to generate the partitions $P(n)$ within a given range, from rank $A$ to rank $B$. 
+This is done by applying an unranking function to obtain the initial partition corresponding to rank $A$.
+Starting from this partition, we then generate the subsequent partitions in $P(n)$ until $B−A+1$ partitions are produced, ensuring that each thread generates exactly $per_{pr}$ partitions.
