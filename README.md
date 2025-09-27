@@ -53,3 +53,5 @@ Below is implementation of a subset generation:
 
 
 It can be use this algorithm to generate the all integer partitions with $𝐴 = 0$ and $𝐵 = P(n)$.
+
+## Experimental results
