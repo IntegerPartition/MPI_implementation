@@ -26,7 +26,9 @@ Starting from this partition, we then generate the subsequent partitions in $P(n
 
 Below is implementation of a subset generation:
 
-unsigned long long int PartitionSubsetAtoB(unsigned long long int A, unsigned long long int B, int n){
+unsigned long long int PartitionSubsetAtoB(unsigned long long int A, unsigned long long int B, int n)
+{
+
 	int a_local[MaxN];
 	unsigned long long int br = 0;
 	unsigned long long int total_l = 0;
@@ -35,6 +37,7 @@ unsigned long long int PartitionSubsetAtoB(unsigned long long int A, unsigned lo
 		if (br == B - A) {
 			total = total + br + 1;
 			return br;
+			
 		}
 		int y = a_local[k] - 1;
 		k--;
