@@ -32,7 +32,6 @@ unsigned long long int PartitionSubsetAtoB(unsigned long long int A, unsigned lo
 	unsigned long long int br = 0;
 	unsigned long long int total_l = 0;
 	unsigned long long int  k = unrank_lex(n, A, a_local);
-
 	do {
 		if (br == B - A) {
 			total = total + br + 1;
