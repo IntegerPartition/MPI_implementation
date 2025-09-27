@@ -54,4 +54,6 @@ Below is implementation of a subset generation:
 
 It can be use this algorithm to generate the all integer partitions with $𝐴 = 0$ and $𝐵 = P(n)$.
 
-## Experimental results
+### Experimental results
+
+We present preliminary experimental results used to evaluate the efficiency of the proposed parallel implementations. All computations were performed on a system equipped with two Intel Xeon Gold 5118 CPUs running at 2.30 GHz, providing a total of 24 cores and 48 threads, under the RHEL Server 7.8 operating system. The code was compiled with GCC 9.2, and Rmpi version 0.6-9 was used.
