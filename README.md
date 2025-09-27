@@ -6,3 +6,6 @@ MPI is designed for performing simultaneous computations across multiple process
 In this model, several independent processes—each a copy of the executable—run in parallel without sharing resources such as data.
 A common practice in designing parallel algorithms is to divide the work and then combine the results of all parallel computations to obtain the final outcome. 
 For this purpose, MPI provides specialized functions that enable communication between processes.
+
+The considered algorithm generates a subset of integer partitions. The idea is to divide the set of partitions 
+$P(n)$ into $t$ equal subsets, where $t$ is the number of processes, and each process computes $per_th=p(n)/t$ partitions.
