@@ -1,5 +1,5 @@
 # MPI Parallel implementation
-Here we give a Message Passing Interface (MPI) parallel implementation of a known algorithm for generating integer partitions. 
+Here we give a Message Passing Interface (MPI) parallel implementation (uploaded .cpp, file) of a known algorithm for generating integer partitions. 
 A significant stage in developing a parallel implementation is deciding how to divide the problem into smaller subproblems and solve them in parallel. 
 It is important to choose an appropriate data type and ensure minimal communication and data sharing.
 MPI is designed for performing simultaneous computations across multiple processing units, each with its own memory. 
@@ -50,10 +50,12 @@ Below is implementation of a subset generation:
 	} while (k > 0);
 	return br;}
 
-
-
 It can be use this algorithm to generate the all integer partitions with $𝐴 = 0$ and $𝐵 = P(n)$.
 
 ### Experimental results
 
-We present preliminary experimental results used to evaluate the efficiency of the proposed parallel implementations. All computations were performed on a system equipped with two Intel Xeon Gold 5118 CPUs running at 2.30 GHz, providing a total of 24 cores and 48 threads, under the RHEL Server 7.8 operating system. The code was compiled with GCC 9.2, and Rmpi version 0.6-9 was used.
+We present preliminary experimental results used to evaluate the efficiency of the proposed parallel implementations. 
+All computations were performed on a system equipped with two Intel Xeon Gold 5118 CPUs running at 2.30 GHz, providing a total of 24 cores and 48 threads, under the RHEL Server 7.8 operating system. 
+The code was compiled with GCC 9.2, and Rmpi version 0.6-9 was used. 
+The source code was compiled with the command mpicxx -O3 -DNDEBUG and its flags.
+
