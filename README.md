@@ -23,3 +23,33 @@ For instance, when $p(20)=627$ and $24$ threads are used, each process generates
 The idea is to generate the partitions $P(n)$ within a given range, from rank $A$ to rank $B$. 
 This is done by applying an unranking function to obtain the initial partition corresponding to rank $A$.
 Starting from this partition, we then generate the subsequent partitions in $P(n)$ until $B−A+1$ partitions are produced, ensuring that each thread generates exactly $per_{pr}$ partitions.
+
+Below is implementation of a subset generation:
+
+unsigned long long int RevfromAtoB(unsigned long long int A, unsigned long long int B, int n)
+{
+	int a_local[MaxN];
+	unsigned long long int br = 0;
+	unsigned long long int total_l = 0;
+	unsigned long long int  k = unrank_lex(n, A, a_local);
+
+	do {
+		if (br == B - A) {
+			total = total + br + 1;
+			return br;
+		}
+
+		int y = a_local[k] - 1;
+		k--;
+		int x = a_local[k] + 1;
+		while (x <= y) {
+			a_local[k] = x;
+			y = y - x;
+			k++;
+		}
+		a_local[k] = y + x;
+		br++;
+		//usePartition(a_local);
+	} while (k > 0);
+	return br;
+}
