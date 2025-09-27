@@ -22,11 +22,11 @@ For sufficiently large $p(n)$, this imbalance becomes negligible.
 For instance, when $p(20)=627$ and $24$ threads are used, each process generates $26$ partitions, while the last process generates only $3$ additional partitions, resulting in a nearly uniform distribution of work.
 The idea is to generate the partitions $P(n)$ within a given range, from rank $A$ to rank $B$. 
 This is done by applying an unranking function to obtain the initial partition corresponding to rank $A$.
-Starting from this partition, we then generate the subsequent partitions in $P(n)$ until $B−A+1$ partitions are produced, ensuring that each thread generates exactly $per_{pr}$ partitions.
+Starting from this partition, we then generate the subsequent partitions in $P(n)$ until $B−A+1$ partitions are produced, ensuring that each process generates exactly $per_{pr}$ partitions.
 
 Below is implementation of a subset generation:
 
-unsigned long long int RevfromAtoB(unsigned long long int A, unsigned long long int B, int n)
+unsigned long long int PartitionSubsetAtoB(unsigned long long int A, unsigned long long int B, int n)
 {
 	int a_local[MaxN];
 	unsigned long long int br = 0;
@@ -49,7 +49,9 @@ unsigned long long int RevfromAtoB(unsigned long long int A, unsigned long long 
 		}
 		a_local[k] = y + x;
 		br++;
-		//usePartition(a_local);
+		//usePartition(a_local); function usePartition executes additional computations that use the generated partition.
 	} while (k > 0);
 	return br;
 }
+
+It can be use this algorithm to generate the all integer partitions with $𝐴 = 0$ and $𝐵 = P(n)$.
