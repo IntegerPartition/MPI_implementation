@@ -25,9 +25,8 @@ This is done by applying an unranking function to obtain the initial partition c
 Starting from this partition, we then generate the subsequent partitions in $P(n)$ until $B−A+1$ partitions are produced, ensuring that each process generates exactly $per_{pr}$ partitions.
 
 Below is implementation of a subset generation:
-{
-unsigned long long int PartitionSubsetAtoB(unsigned long long int A, unsigned long long int B, int n)
-{
+
+unsigned long long int PartitionSubsetAtoB(unsigned long long int A, unsigned long long int B, int n){
 	int a_local[MaxN];
 	unsigned long long int br = 0;
 	unsigned long long int total_l = 0;
