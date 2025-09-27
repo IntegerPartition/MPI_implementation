@@ -52,6 +52,5 @@ unsigned long long int PartitionSubsetAtoB(unsigned long long int A, unsigned lo
 	} while (k > 0);
 	return br;
 }
-}
 
 It can be use this algorithm to generate the all integer partitions with $𝐴 = 0$ and $𝐵 = P(n)$.
