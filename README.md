@@ -36,7 +36,6 @@ unsigned long long int PartitionSubsetAtoB(unsigned long long int A, unsigned lo
 			total = total + br + 1;
 			return br;
 		}
-
 		int y = a_local[k] - 1;
 		k--;
 		int x = a_local[k] + 1;
