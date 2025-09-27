@@ -52,8 +52,6 @@ unsigned long long int PartitionSubsetAtoB(unsigned long long int A, unsigned lo
 	return br;
 }
 
-}
-
 <div style="border:1px solid #ccc; padding:10px; border-radius:6px;">
 Your text here
 </div>
