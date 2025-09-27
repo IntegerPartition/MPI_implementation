@@ -30,7 +30,7 @@ Below is implementation of a subset generation:
 unsigned long long int PartitionSubsetAtoB(unsigned long long int A, unsigned long long int B, int n)
 {
 
-	unsigned long long int PartitionSubsetAtoB(unsigned long long int A, unsigned long long int B, int n) int a_local[MaxN];
+	unsigned long long int PartitionSubsetAtoB(unsigned long long int A, unsigned long long int B, int n){ int a_local[MaxN];
 	unsigned long long int br = 0;
 	unsigned long long int total_l = 0;
 	unsigned long long int  k = unrank_lex(n, A, a_local);
