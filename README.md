@@ -8,4 +8,5 @@ A common practice in designing parallel algorithms is to divide the work and the
 For this purpose, MPI provides specialized functions that enable communication between processes.
 
 The considered algorithm generates a subset of integer partitions. The idea is to divide the set of partitions 
-$P(n)$ into $t$ equal subsets, where $t$ is the number of processes, and each process computes $per_{th}=p(n)/t$ partitions.
+$P(n)$ into $t$ equal subsets, where $t$ is the number of processes, and each process computes $per_{pr}=p(n)/t$ partitions.
+If $per_{pr}$ is not an integer, then each processes, except one, generates $per_{pr}=[p(n)/t]$ partitions, while a single process generates the remaining $p(n)−(t−1)x per_{pr}$ partitions.
