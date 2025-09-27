@@ -9,4 +9,4 @@ For this purpose, MPI provides specialized functions that enable communication b
 
 The considered algorithm generates a subset of integer partitions. The idea is to divide the set of partitions 
 $P(n)$ into $t$ equal subsets, where $t$ is the number of processes, and each process computes $per_{pr}=p(n)/t$ partitions.
-If $per_{pr}$ is not an integer, then each processes, except one, generates $per_{pr}=[p(n)/t]$ partitions, while a single process generates the remaining $p(n)−(t−1)x per_{pr}$ partitions.
+If $per_{pr}$ is not an integer, then each processes, except one, generates $per_{pr}=[p(n)/t]$ partitions, while a single process generates the remaining $p(n)−(t−1)* per_{pr}$ partitions.
