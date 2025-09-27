@@ -53,7 +53,6 @@ unsigned long long int PartitionSubsetAtoB(unsigned long long int A, unsigned lo
 		//usePartition(a_local); function usePartition executes additional computations that use the generated partition.
 	} while (k > 0);
 	return br;
-
 }
 
 <div style="border:1px solid #ccc; padding:10px; border-radius:6px;">
