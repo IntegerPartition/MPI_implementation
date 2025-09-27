@@ -27,6 +27,7 @@ Starting from this partition, we then generate the subsequent partitions in $P(n
 Below is implementation of a subset generation:
 
 unsigned long long int PartitionSubsetAtoB(unsigned long long int A, unsigned long long int B, int n)
+
 {
 
 	int a_local[MaxN];
@@ -52,6 +53,7 @@ unsigned long long int PartitionSubsetAtoB(unsigned long long int A, unsigned lo
 		//usePartition(a_local); function usePartition executes additional computations that use the generated partition.
 	} while (k > 0);
 	return br;
+
 }
 
 <div style="border:1px solid #ccc; padding:10px; border-radius:6px;">
