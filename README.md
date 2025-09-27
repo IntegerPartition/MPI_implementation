@@ -28,7 +28,7 @@ Below is implementation of a subset generation:
 
 
 unsigned long long int PartitionSubsetAtoB(unsigned long long int A, unsigned long long int B, int n)
-{
+{gjh
 
 	int a_local[MaxN];
 	unsigned long long int br = 0;
