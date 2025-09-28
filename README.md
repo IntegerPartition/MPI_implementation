@@ -60,5 +60,5 @@ All computations were performed on a system equipped with two Intel Xeon Gold 51
 The code was compiled with GCC 9.2, and Rmpi version 0.6-9 was used. 
 
 Compile: **mpicxx -O3 -DNDEBUG name.cpu -o name** and its flags.
-Run: **mpirun -np x ./name**
+Run: **mpirun -np x ./name** 
 
