@@ -73,6 +73,9 @@ Run: **mpirun -np x ./name**
 
 **Table 1**. Execution times for MPI implementation using subsets
 
+Speedup is given by the formula:
+
+Speedup=T_1/T_P
 
 |   n   |CPUvs.PR=2|CPUvs.PR=4|CPUvs.PR=8|CPUvs.PR=16|CPUvs.PR=24|CPUvs.PR=32|CPUvs.PR=48| 
 |-------|----------|----------|----------|-----------|-----------|-----------|-----------|
@@ -81,11 +84,11 @@ Run: **mpirun -np x ./name**
 |  120  |   1.62x  |   3.19x  |  6.21x   |  11.36x   |  16.33x   |  16.82x   |  24.46x   |
 |  140  |   1.69x  |   3.40x  |  6.34x   |  11.57x   |  17.29x   |  17.73x   |  24.46x   |
 
-**Table 2**. Speed up of MPI implementation
+**Table 2**. Speedup vs. Processes for diffrent $n$ values
 
 ![MPI_speedup](https://github.com/user-attachments/assets/62640770-2873-40ba-bc1d-8ccfe2acbca1)
 
-**Figure 1**.
+**Figure 1**. Speedup vs. Processes for diffrent $n$ values
 
 Parallel Efficiency is calculated as:
 
@@ -93,5 +96,5 @@ Parallel Efficiency=(Speedup/Processes)*100%
 
 ![ParallelEfficiency](https://github.com/user-attachments/assets/8a5bbea4-07f5-4be1-96b6-3ff37b63848d)
 
-**Figure 2**.
+**Figure 2**. Parallel Efficiency vs. Processes for diffrent $n$ values
 
