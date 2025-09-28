@@ -87,4 +87,4 @@ Run: **mpirun -np x ./name**
 
 Parallel Efficiency is calculated as:
 
-$Parallel Efficiency=Speedup/processes*100%$
+$Parallel~Efficiency=(Speedup/processes)*100\%$
