@@ -74,7 +74,7 @@ Run: **mpirun -np x ./name**
 **Table 1**. Execution times for MPI implementation using subsets
 
 
-|   n   |TH=2vs.CPU|TH=4vs.CPU|TH=8vs.CPU|TH=16vs.CPU|TH=24vs.CPU|TH=32vs.CPU|TH=48vs.CPU| 
+|   n   |CPUvs.TH=2|CPUvs.TH=4|CPUvs.TH=8|CPUvs.TH=16|CPUvs.TH=24|CPUvs.TH=32|CPUvs.TH=48| 
 |-------|----------|----------|----------|-----------|-----------|-----------|-----------|
 |   80  |   1.83x  |   2.64x  |  4.96x   |  11.74x   |  13.30x   |  16.28x   |  20.47x   |
 |  100  |   1.59x  |   2.81x  |  6.65x   |  10.38x   |  12.22x   |  16.24x   |  17.97x   |
