@@ -73,9 +73,11 @@ Run: **mpirun -np x ./name**
 
 **Table 1**. Execution times for MPI implementation using subsets
 
-Speedup is given by the formula:
+Speedup ($S_p$) is given by the formula:
 
-Speedup=T_1/T_P
+$S_p=T_1/T_P$
+
+
 
 |   n   |CPUvs.PR=2|CPUvs.PR=4|CPUvs.PR=8|CPUvs.PR=16|CPUvs.PR=24|CPUvs.PR=32|CPUvs.PR=48| 
 |-------|----------|----------|----------|-----------|-----------|-----------|-----------|
