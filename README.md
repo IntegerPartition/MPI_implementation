@@ -63,10 +63,12 @@ Compile: **mpicxx -O3 -DNDEBUG name.cpu -o name** and its flags.
 
 Run: **mpirun -np x ./name** 
 
-| Input      | Description                  | Example         |
-|------------|------------------------------|-----------------|
-| `n`        | Size of integer partitions   | `20`            |
-| `t`        | Number of processes/threads  | `24`            |
-| `per_th`   | Partitions per thread        | `26`            |
+
+| n     |  TH=1    |  TH=2    |  TH=4    |  TH=8   | TH=16   | TH=24   | TH=32   | TH=48   | 
+|-------|----------|----------|----------|---------|---------|---------|---------|---------|
+|   80  | 38.310ms | 20.902ms | 14.481ms | 7.714ms | 3.261ms | 2.880ms | 2.352ms | 1.871ms |
+|  100  | 481.18ms | 259.70ms | 147.01ms | 73.12ms | 39.79ms | 33.80ms | 25.44ms | 27.99ms |
+|  120  |  4763.79ms | 2544.77ms | 1292.21ms | 663.71ms | 362.7ms | 252.3ms | 245.0ms | 168.5ms |
+|  140  | 39243.5ms | 19979.7ms | 9970.2ms | 5340.7ms | 2930.9ms | 1961.1ms | 1912.3ms | 1386.7ms |
 
 
