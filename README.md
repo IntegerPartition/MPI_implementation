@@ -85,3 +85,6 @@ Run: **mpirun -np x ./name**
 
 ![MPI_speedup](https://github.com/user-attachments/assets/62640770-2873-40ba-bc1d-8ccfe2acbca1)
 
+Parallel Efficiency is calculated as:
+
+$Parallel Efficiency=Speedup/processes*100%$
