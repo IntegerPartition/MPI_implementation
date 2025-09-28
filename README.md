@@ -70,5 +70,6 @@ Run: **mpirun -np x ./name**
 |  100  | 481.182ms | 259.706ms | 147.012ms | 73.121ms | 39.793ms | 33.803ms | 25.441ms | 27.991ms |
 |  120  | 4763.79ms | 2544.77ms | 1292.21ms | 663.71ms | 362.71ms | 252.39ms | 245.02ms | 168.52ms |
 |  140  | 39243.5ms | 19979.7ms | 9970.20ms | 5340.7ms | 2930.9ms | 1961.1ms | 1912.3ms | 1386.7ms |
-Table 1. Execution times for MPI implementation using subsets
+
+**Table 1**. Execution times for MPI implementation using subsets
 
