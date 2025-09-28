@@ -64,7 +64,7 @@ Compile: **mpicxx -O3 -DNDEBUG name.cpu -o name** and its flags.
 Run: **mpirun -np x ./name** 
 
 
-| n     |    CPU    |   TH=2    |   TH=4    |   TH=8   |  TH=16   |  TH=24   |  TH=32   |  TH=48   | 
+| n     |    CPU    |   PR=2    |   PR=4    |   PR=8   |  PR=16   |  PR=24   |  PR=32   |  PR=48   | 
 |-------|-----------|-----------|-----------|----------|----------|----------|----------|----------|
 |   80  |  38.310ms |  20.902ms |  14.481ms |  7.714ms |  3.261ms |  2.880ms |  2.352ms |  1.871ms |
 |  100  | 413.182ms | 259.706ms | 147.012ms | 73.121ms | 39.793ms | 33.803ms | 25.441ms | 22.991ms |
@@ -74,7 +74,7 @@ Run: **mpirun -np x ./name**
 **Table 1**. Execution times for MPI implementation using subsets
 
 
-|   n   |CPUvs.TH=2|CPUvs.TH=4|CPUvs.TH=8|CPUvs.TH=16|CPUvs.TH=24|CPUvs.TH=32|CPUvs.TH=48| 
+|   n   |CPUvs.PR=2|CPUvs.PR=4|CPUvs.PR=8|CPUvs.PR=16|CPUvs.PR=24|CPUvs.PR=32|CPUvs.PR=48| 
 |-------|----------|----------|----------|-----------|-----------|-----------|-----------|
 |   80  |   1.83x  |   2.64x  |  4.96x   |  11.74x   |  13.30x   |  16.28x   |  20.47x   |
 |  100  |   1.59x  |   2.81x  |  6.65x   |  10.38x   |  12.22x   |  16.24x   |  17.97x   |
@@ -82,3 +82,6 @@ Run: **mpirun -np x ./name**
 |  140  |   1.69x  |   3.40x  |  6.34x   |  11.57x   |  17.29x   |  17.73x   |  24.46x   |
 
 **Table 2**. Speed up of MPI implementation
+
+![MPI_speedup](https://github.com/user-attachments/assets/62640770-2873-40ba-bc1d-8ccfe2acbca1)
+
