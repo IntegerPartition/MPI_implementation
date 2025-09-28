@@ -77,7 +77,7 @@ Speedup ($S_p$) is given by the formula:
 
 $S_p=T_1/T_P$
 
-
+$P=$ number of processors; $T_1=$ time for optimal serial algorithm on one processor; $T_p$= time for parallel algorithm on $P$ processors.
 
 |   n   |CPUvs.PR=2|CPUvs.PR=4|CPUvs.PR=8|CPUvs.PR=16|CPUvs.PR=24|CPUvs.PR=32|CPUvs.PR=48| 
 |-------|----------|----------|----------|-----------|-----------|-----------|-----------|
